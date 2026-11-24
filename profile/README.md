@@ -1,4 +1,7 @@
-[App](https://app.frontier.fi) · [GraphQL API](https://api.frontier.fi/graphql) · [Protocol Docs](https://docs.balancer.fi) · `pnpm add @frontier-fi/sdk @frontier-fi/maths`
+- Web app: https://app.frontier.fi
+- GraphQL API: https://api.frontier.fi/graphql
+- Protocol docs: https://docs.balancer.fi
+- npm: [`@frontier-fi/sdk`](https://www.npmjs.com/package/@frontier-fi/sdk), [`@frontier-fi/maths`](https://www.npmjs.com/package/@frontier-fi/maths)
 
 Live on Ethereum (`1`), Base (`8453`), Monad (`143`), and Sepolia (`11155111`) — identical CREATE2 addresses across every chain (`Vault`: `0xFF00009C1A83Ec25434522ef355b99e9a70000FF`).
 
