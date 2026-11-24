@@ -14,7 +14,7 @@ Live on Ethereum (`1`), Base (`8453`), Monad (`143`), and Sepolia (`11155111`) â
 <details>
 <summary><h3>Core contract addresses</h3></summary>
 
-Identical across Ethereum (`1`), Base (`8453`), Monad (`143`), and Sepolia (`11155111`). Full records and LP oracle factories live in [`deployments/addresses/_lookup.json`](https://github.com/frontier-fi/deployments/blob/main/addresses/_lookup.json).
+Identical across all chains. Full records and LP oracle factories live in [`deployments/addresses/_lookup.json`](https://github.com/frontier-fi/deployments/blob/main/addresses/_lookup.json).
 
 | Contract | Address |
 | --- | --- |
