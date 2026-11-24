@@ -1,42 +1,15 @@
 [App](https://app.frontier.fi) · [GraphQL API](https://api.frontier.fi/graphql) · [Protocol Docs](https://docs.balancer.fi) · `pnpm add @frontier-fi/sdk @frontier-fi/maths`
 
-Live on **Ethereum** (`1`), **Base** (`8453`), **Monad** (`143`), and **Sepolia** (`11155111`) — identical CREATE2 addresses across every chain (`Vault`: `0xFF00009C1A83Ec25434522ef355b99e9a70000FF`).
+Live on Ethereum (`1`), Base (`8453`), Monad (`143`), and Sepolia (`11155111`) — identical CREATE2 addresses across every chain (`Vault`: `0xFF00009C1A83Ec25434522ef355b99e9a70000FF`).
 
-```mermaid
-flowchart TD
-    E46["balancer-v3-erc4626-tests (manual harness)"] -. "informs" .-> CR["code-review"]
-    E46 -. "informs" .-> MD["metadata"]
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/frontier-fi/.github/main/profile/architecture-dark.svg">
+    <img alt="Frontier Finance repository architecture" src="https://raw.githubusercontent.com/frontier-fi/.github/main/profile/architecture-light.svg">
+  </picture>
+</p>
 
-    DEP["deployments"]
-    SG["subgraphs (Ormi Labs)"]
-    MATH["maths (@frontier-fi/maths)"]
-    TL["tokenlists"]
-    BL["blocklist"]
-    BE["backend (GraphQL API)"]
-    SDK["sdk (@frontier-fi/sdk)"]
-    FE["frontend"]
-
-    DEP -. "manual + ABIs" .-> SG
-    DEP -. "sync-config" .-> BE
-    DEP -. "update:deployments" .-> SDK
-
-    SG -->|"Ormi GraphQL"| BE
-    TL -. "raw main" .-> BE
-    CR -. "raw main" .-> BE
-    BL -. "raw main" .-> BE
-    MD -. "raw main" .-> BE
-    MD -. "raw main (direct)" .-> FE
-
-    MATH -->|"npm"| BE
-    MATH -->|"npm"| SDK
-    MATH -->|"npm"| FE
-
-    BE -->|"GraphQL + codegen"| SDK
-    BE -->|"GraphQL + codegen"| FE
-    SDK -->|"npm"| FE
-```
-
-<sub>Solid: runtime, npm, or GraphQL codegen · Dashed: raw GitHub <code>main</code> fetch or dev-time sync</sub>
+<p align="center"><sub><em>Solid: runtime, npm, or GraphQL codegen · Dashed: raw GitHub <code>main</code> fetch or dev-time sync</em></sub></p>
 
 <details>
 <summary><h3>Core contract addresses</h3></summary>
