@@ -12,7 +12,7 @@ Live on Ethereum (`1`), Base (`8453`), Monad (`143`), and Sepolia (`11155111`) â
   </picture>
 </p>
 
-<p align="center"><sub><em>Solid: runtime, npm, or GraphQL codegen Â· Dashed: raw GitHub <code>main</code> fetch or dev-time sync</em></sub></p>
+<p align="center"><sub><em>Solid: runtime, npm, or GraphQL codegen. Dashed: raw GitHub <code>main</code> fetch or dev-time sync.</em></sub></p>
 
 <details>
 <summary><h3>Core contract addresses</h3></summary>
